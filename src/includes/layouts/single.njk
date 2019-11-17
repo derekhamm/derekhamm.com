@@ -1,0 +1,10 @@
+---
+layout: base.njk
+---
+
+<div class="content">
+    <h2>{{ title }}</h2>
+    <h4>{{ description }}</h4>
+    <img src="{{ thumbnail }}" alt="{{ title }}" />
+    {{ content | safe }}
+</div>

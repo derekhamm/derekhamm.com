@@ -1,0 +1,121 @@
+img {
+    max-width: 100%;
+    margin-top: 1em;
+}
+
+a {
+    color: #222222;
+    font-family: acumin-pro-wide, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .95em;
+    border-bottom: .2em solid #222222;
+}
+
+a:hover, .active {
+    border-bottom: .2em solid rgba(34, 34, 34, 0);
+    background: #ffe449;
+}
+
+body {
+    font-family: itc-benguiat, serif;
+    background: #ffe449;
+    color: #222222;
+}
+
+header, main {
+    background: #f1efdc;
+}
+
+main, footer {
+    padding: 4em 0;
+}
+
+header, main, footer {
+    display: grid;
+    grid-template-columns:
+    minmax(1em, auto)
+    repeat(6, minmax(1em, 6em))
+    minmax(1em, auto)
+    ;
+    grid-column-gap: 4%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4%;
+}
+
+.logo {
+    grid-column: 1 / span 8;
+}
+
+nav, .content, .info, .contact, .social {
+    grid-column: 2 / span 6;
+}
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: -.25em;
+    margin-left: -.1em;
+    letter-spacing: -2px;
+}
+
+h1 a {
+    font-family: unit-gothic-717, sans-serif;
+    font-weight: 400;
+    border-bottom: none;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+
+nav a {
+    margin-left: 2em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: .2em;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: .2em;
+}
+
+.home h3 {
+    line-height: 2.4;
+}
+
+h4 {
+    font-family: acumin-pro-wide, sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 860px) {
+
+    body {
+        font-size: 110%;
+    }
+
+    .info {
+        grid-column: 2 / span 2;
+    }
+
+    .contact {
+        grid-column: 4 / span 2;
+    }
+
+    .social {
+        grid-column: 6 / span 2;
+    }
+
+}

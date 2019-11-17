@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/zio5bjj.css">
+</head>
+<body>
+
+    <header>
+    <div class="logo">
+        <h1><a href="/">{{ settings.siteTitle }}</a></h1>
+    </div>
+    <nav id="nav">
+        {%- for nav in collections.nav -%}
+            <a href="{{ nav.url }}" {% if page.url == nav.url %}class="active"{% endif %}>{{ nav.data.title }}</a>
+        {%- endfor -%}
+    </nav>
+
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+    <footer id="footer">
+
+    <div class="info">
+		<p class="site-description">Designer / Educator</p>
+        <p class="cv"><a href="/cv-dh.pdf" target="_blank">CV</a></p>
+		</div><!-- .site-info -->
+		<div class="contact">
+			<p>Get in touch:</p>
+			<p><a href="mailto:hamm.derek@gmail.com">hamm.derek@gmail.com</a></p>
+		</div>
+		<div class="social">
+		  <p>Instagram: <a href="https://www.instagram.com/derekhamm/">@derekhamm</a></p>
+		  <p>Twitter: <a href="https://twitter.com/derekhamm">@derekhamm</a></p>
+		</div>
+
+    </footer>
+    
+</body>
+</html>
