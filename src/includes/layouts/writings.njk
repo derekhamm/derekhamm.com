@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+
+<div class="content">
+
+    <div class="writings-grid">
+
+        {% for writings in collections.writings %}
+
+            <div class="writing">
+                <h3><a href="{{ writings.url }}">{{ writings.data.title }}</a></h3>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+    {{ content | safe }}
+    
+</div>

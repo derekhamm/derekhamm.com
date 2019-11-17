@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+
+<div class="content">
+
+    <div class="designs-grid">
+
+        {% for designs in collections.designs %}
+
+            <div class="design">
+                <img src="{{ designs.data.thumbnail }}" />
+                <h3><a href="{{ designs.url }}">{{ designs.data.title }}</a></h3>
+                <h4>{{ designs.data.description }}</h4>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+    {{ content | safe }}
+    
+</div>
