@@ -13,12 +13,12 @@ a {
 
 a:hover, .active {
     border-bottom: .2em solid rgba(34, 34, 34, 0);
-    background: #FFCC4E;
+    background: #ffd65c;
 }
 
 body {
     font-family: itc-benguiat, serif;
-    background: #FFCC4E;
+    background: #ffd65c;
     color: #231f20;
 }
 
