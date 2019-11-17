@@ -8,7 +8,6 @@ a {
     font-family: acumin-pro, sans-serif;
     text-decoration: none;
     font-weight: 700;
-    letter-spacing: .5px;
     border-bottom: .2em solid #231f20;
 }
 
@@ -42,9 +41,9 @@ header, main, footer {
     grid-row-gap: 1em;
 }
 
-.projects-grid {
+.projects-grid, .designs-grid, .writings-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 4%;
 }
 
@@ -116,6 +115,10 @@ footer p {
 
     body {
         font-size: 110%;
+    }
+
+    .projects-grid, .designs-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
     .info {
