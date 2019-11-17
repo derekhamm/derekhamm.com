@@ -86,13 +86,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 400;
     margin-bottom: .2em;
 }
 
-.home h3 {
+.intro p {
     line-height: 2.4;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: .2em;
 }
 
 h4 {
