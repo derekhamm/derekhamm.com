@@ -6,10 +6,11 @@ layout: base.njk
 
     <div class="writings-grid">
 
-        {% for writings in collections.writings %}
+        {% for writings in collections.writings | reverse %}
 
             <div class="writing">
                 <h3><a href="{{ writings.url }}">{{ writings.data.title }}</a></h3>
+                <h4><time datetime="{{ writings.date | htmlDateString }}">{{ writings.date | readableDate }}</time></h4>
             </div>
 
         {% endfor %}

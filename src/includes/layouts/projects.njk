@@ -6,7 +6,7 @@ layout: base.njk
 
     <div class="projects-grid">
 
-        {% for projects in collections.projects %}
+        {% for projects in collections.projects | reverse %}
 
             <div class="project">
                 <img src="{{ projects.data.thumbnail }}" />
