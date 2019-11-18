@@ -9,8 +9,12 @@ layout: base.njk
         {% for writings in collections.writings | reverse %}
 
             <div class="writing">
+                <div class="writing-title">
                 <h3><a href="{{ writings.url }}">{{ writings.data.title }}</a></h3>
+                </div>
+                <div class="writing-date">
                 <h4><time datetime="{{ writings.date | htmlDateString }}">{{ writings.date | readableDate }}</time></h4>
+                </div>
             </div>
 
         {% endfor %}

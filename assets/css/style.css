@@ -17,7 +17,7 @@ a:hover, .active {
 }
 
 body {
-    font-family: freight-micro-pro, serif;
+    font-family: p22-mackinac-pro, serif;
     background: #ffd65c;
     color: #231f20;
 }
@@ -34,7 +34,7 @@ header, main, footer {
     display: grid;
     grid-template-columns:
     minmax(1em, auto)
-    repeat(6, minmax(1em, 6em))
+    repeat(6, minmax(1em, 5em))
     minmax(1em, auto)
     ;
     grid-column-gap: 4%;
@@ -45,6 +45,20 @@ header, main, footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 4%;
+}
+
+.writing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.writing-title h3 {
+    font-size: 1.8em;
+}
+
+.writing-date {
+    text-align: right;
 }
 
 .logo {
@@ -58,7 +72,7 @@ nav, .content, .info, .contact, .social {
 h1 {
     font-size: 2em;
     text-transform: uppercase;
-    margin-top: -.25em;
+    margin-top: -.26em;
     margin-left: -.1em;
     letter-spacing: -2px;
 }
@@ -106,6 +120,10 @@ h4 {
     font-size: 1em;
 }
 
+p {
+    line-height: 1.4;
+}
+
 footer p {
     font-family: courier-prime, monospace;
     font-size: .85em;
@@ -114,7 +132,7 @@ footer p {
 @media screen and (min-width: 860px) {
 
     body {
-        font-size: 110%;
+        font-size: 120%;
     }
 
     .projects-grid, .designs-grid {
